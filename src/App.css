@@ -9,4 +9,8 @@
 .topbarlayoutContainer{
  
   width: 100%;
+ 
+}
+.pagesContainer{
+  padding-top: 50px;
 }

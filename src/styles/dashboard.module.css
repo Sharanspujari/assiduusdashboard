@@ -1,0 +1,145 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  min-height:100vh;
+  padding: 5px;
+  gap: 30px;
+  margin-left: 10px;
+  padding: 15px;
+  padding-top: 20px;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  gap: 20px;
+  min-height: 90vh;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  justify-content: center;
+  gap: 20px;
+  min-height: 85vh;
+}
+.leftTop,
+.leftBottom,
+.rightTop,
+.rightBottom {
+  width: 100%;
+  background-color: white;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.grapheadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.dropdownContainer {
+  display: flex;
+  gap: 15px;
+}
+.dropdownContainer > select {
+  padding: 5px;
+  border: none;
+  border: 1px solid rgb(219, 218, 218);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid rgb(240, 240, 240);
+}
+.newsalesBtn {
+  padding: 5px;
+  border: none;
+  border: 1px solid rgb(224, 222, 222);
+  background-color: rgb(231, 231, 246);
+  color: rgb(28, 146, 175);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.newsalesBtn:hover {
+  color: rgb(86, 188, 214);
+}
+.dropdownContainer {
+  display: flex;
+  gap: 15px;
+}
+.checkboxContainer{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.in,.out{
+  width:12px;
+  height:12px;
+  border-radius:3px;
+  background-color:rgb(18, 190, 18);
+
+}
+.out{
+  background-color: rgb(4, 150, 4);
+}
+/* Css for Popup */
+.popupContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.popupmainContent {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin-left: 170px;
+}
+.poupContent {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  
+}
+.closeIcon {
+  float: right;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+.closeIcon:hover {
+  color: red;
+}
+.poupContent > input {
+  margin-left: 40px;
+  cursor: pointer;
+  background-color: white;
+}
+.poupContent>button{
+  margin-right: 20px;
+  padding: 4px;
+  background-color: rgb(10, 193, 10);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.poupContent>button:hover{
+  background-color: rgb(131, 215, 4);
+}

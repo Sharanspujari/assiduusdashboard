@@ -10,7 +10,7 @@ const Topbar = () => {
   return (
     <>
        <div className={style.topbarContainer}>
-       
+        
            <div className={style.searchContainer}>
              <input type='text' className={style.searchInput}/>
              <FontAwesomeIcon icon={faMagnifyingGlass} className={style.searchIcon}/>
