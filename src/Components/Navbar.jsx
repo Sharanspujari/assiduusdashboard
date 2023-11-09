@@ -21,34 +21,30 @@ const Navbar = () => {
   ];
   const location = useLocation();
   return (
-    <>
-      <div className={style.navbarContainer}>
-        <div className={style.logoContainer}>
-          <img className={style.logo} src="Assiduus_logo.jpg" />
-        </div>
-        <div className={style.routeContainer}>
-          {navData.length !== 0
-            ? navData.map((item, i) => (
-                <Link
-                  to={item.path}
-                  key={i + 1}
-                  className={style.navlink}
-                  style={{
-                    backgroundColor:
-                      location.pathname === item.path ? "green" : "",
-                  }}
-                >
-                  <div className={style.singleroute}>
-                    <div>
-                      {" "}
-                      <FontAwesomeIcon
-                        style={{
-                          color: location.pathname === item.path ? "white" : "",
-                        }}
-                        icon={item.icon}
-                      />
-                    </div>
-                    <div>
+    <div className={style.navbarContainer}>
+      <div className={style.routeContainer}>
+        {navData.length !== 0
+          ? navData.map((item, i) => (
+              <Link
+                to={item.path}
+                key={i + 1}
+                className={style.navlink}
+                style={{
+                  backgroundColor:
+                    location.pathname === item.path ? "green" : "",
+                }}
+              >
+                <div className={style.singleroute}>
+                  <div>
+                    {" "}
+                    <FontAwesomeIcon
+                      style={{
+                        color: location.pathname === item.path ? "white" : "",
+                      }}
+                      icon={item.icon}
+                    />
+                  </div>
+                  <div>
                     <span
                       style={{
                         color: location.pathname === item.path ? "white" : "",
@@ -57,14 +53,13 @@ const Navbar = () => {
                     >
                       {item.heading}
                     </span>
-                    </div>
                   </div>
-                </Link>
-              ))
-            : ""}
-        </div>
+                </div>
+              </Link>
+            ))
+          : ""}
       </div>
-    </>
+    </div>
   );
 };
 

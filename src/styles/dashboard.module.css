@@ -1,31 +1,14 @@
 .mainContainer {
   width: 100%;
-  display: flex;
-  min-height:100vh;
-  padding: 5px;
-  gap: 30px;
-  margin-left: 10px;
-  padding: 15px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
-.leftContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 49%;
-  gap: 20px;
-  min-height: 90vh;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap:18px;
 }
-.rightContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 48%;
-  justify-content: center;
-  gap: 20px;
-  min-height: 85vh;
-}
+
 .leftTop,
 .leftBottom,
 .rightTop,
@@ -74,19 +57,19 @@
   display: flex;
   gap: 15px;
 }
-.checkboxContainer{
+.checkboxContainer {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.in,.out{
-  width:12px;
-  height:12px;
-  border-radius:3px;
-  background-color:rgb(18, 190, 18);
-
+.in,
+.out {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: rgb(18, 190, 18);
 }
-.out{
+.out {
   background-color: rgb(4, 150, 4);
 }
 /* Css for Popup */
@@ -98,7 +81,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index:999;
   top: 0;
   left: 0;
 }
@@ -116,7 +99,6 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
-  
 }
 .closeIcon {
   float: right;
@@ -131,7 +113,7 @@
   cursor: pointer;
   background-color: white;
 }
-.poupContent>button{
+.poupContent > button {
   margin-right: 20px;
   padding: 4px;
   background-color: rgb(10, 193, 10);
@@ -140,6 +122,6 @@
   cursor: pointer;
   border-radius: 4px;
 }
-.poupContent>button:hover{
+.poupContent > button:hover {
   background-color: rgb(131, 215, 4);
 }

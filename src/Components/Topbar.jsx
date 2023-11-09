@@ -10,7 +10,12 @@ const Topbar = () => {
   return (
     <>
        <div className={style.topbarContainer}>
-        
+    
+       <div className={style.logoContainer}>
+          <img className={style.logo} src="Assiduus_logo.jpg" />
+        </div>
+
+         <div style={{display:'flex',alignItems:'center',gap:'35px'}}>
            <div className={style.searchContainer}>
              <input type='text' className={style.searchInput}/>
              <FontAwesomeIcon icon={faMagnifyingGlass} className={style.searchIcon}/>
@@ -27,7 +32,7 @@ const Topbar = () => {
            <img src='profile_image.jpg' alt='image not found' className={style.profileImage}/>
            <FontAwesomeIcon icon={ faSortDown}/>
            </div>
-      
+           </div>
         </div>
     </>
   )

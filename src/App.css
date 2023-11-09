@@ -1,16 +1,36 @@
-*{
+* {
   box-sizing: border-box;
-  padding:0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
-.mainContainer{
-  display: flex;
-}
-.topbarlayoutContainer{
- 
+
+.mainContainer {
   width: 100%;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.pagesContainer{
-  padding-top: 50px;
+
+.topbarContainer {
+  width: 100%;
+  position: relative;
 }
+
+.topbarlayoutContainer {
+  width: 100%;
+  display: flex;
+  gap:20px;
+  justify-content: space-between;
+}
+
+.navbarappContainer {
+  width: 12%;
+  position: relative;
+}
+
+.pagesContainer {
+  width: 85%;
+  height:fit-content;
+  margin:70px 25px;
+  }
+
