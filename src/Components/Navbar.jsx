@@ -12,12 +12,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const navData = [
-    { id: "1", path: "/", icon: faTableColumns, heading: "Dashboard" },
-    { id: "1", path: "/accounts", icon: faWallet, heading: "Accounts" },
-    { id: "1", path: "/payroll", icon: faDollarSign, heading: "Payroll" },
-    { id: "1", path: "/reports", icon: faFileLines, heading: "Reports" },
-    { id: "1", path: "/advisor", icon: faUser, heading: "Advisor" },
-    { id: "1", path: "/contacts", icon: faAddressBook, heading: "Contact" },
+    { id: 1, path: "/", icon: faTableColumns, heading: "Dashboard" },
+    { id:2, path: "/accounts", icon: faWallet, heading: "Accounts" },
+    { id:3, path: "/payroll", icon: faDollarSign, heading: "Payroll" },
+    { id:4, path: "/reports", icon: faFileLines, heading: "Reports" },
+    { id: 5, path: "/advisor", icon: faUser, heading: "Advisor" },
+    { id: 6, path: "/contacts", icon: faAddressBook, heading: "Contact" },
   ];
   const location = useLocation();
   return (
